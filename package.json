@@ -4,7 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "webpack-dev-server --mode development --open",
+
+        "del:build": "rimraf ./public/*",
+        "build": "cross-env NODE_ENV=production webpack --config webpack.prod.config.js",
+
+        "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --open",
+
         "start": "node server.js",
         "heroku-postbuild": "webpack -p"
     },
@@ -31,7 +36,7 @@
     "dependencies": {
         "express": "4.16.4",
         "heroku-cli": "^7.0.9",
-        "react": "^16.8.4",
-        "react-dom": "^16.8.4"
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
     }
 }
