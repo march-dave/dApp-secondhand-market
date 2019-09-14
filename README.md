@@ -10,3 +10,8 @@ A simple deployment ready webpack-react application for heroku
 ## Verify production code
 1. Run `webpack -p`
 2. Run `node server.js`, and visit **localhost:8080**, voila your code is ready for heroku now.
+
+
+## Ref: 
+Debug, Production mode will be choose based on requirement.
+https://github.com/march-dave/webpack-4-test
