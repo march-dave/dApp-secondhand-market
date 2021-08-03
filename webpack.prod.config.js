@@ -1,57 +1,40 @@
-var HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path')
 
 module.exports = {
-  mode: "production",
-  entry: {
-    main: __dirname + "/src/index.js"
-  },
-  output: {
-    path: __dirname + "/public",
-    filename: "[name]-[hash].js"
+  mode: 'production',
+  entry: path.join(__dirname, 'src/js', 'index.js'),
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
   },
 
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'build.js'
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-            plugins: [
-              "@babel/plugin-proposal-object-rest-spread",
-              "@babel/plugin-proposal-class-properties"
-            ]
-          }
-        }
-      },
-      {
         test: /\.css$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader", options: { modules: true } }
-        ]
-      },
-      {
-        test: /\.(jpe?g|gif|png|svg)$/i,
-        use: [
-          {
-            loader: "url-loader",
-            options: {
-              limit: 10000
-            }
-          }
-        ]
+        use: ['style-loader','css-loader'],
+        include: [/src/, /node_modules/]
+      }, {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        query: {
+          presets: ['es2015', 'react', 'stage-2']
+        }
+      }, {
+        test: /\.json$/,
+        loader: 'json-loader',
+        include: '/build/contracts/'
       }
     ]
   },
-
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "hangman",
-      template: __dirname + "/assets/index.html",
-      filename: "index.html"
-    })
-  ]
-};
+  optimization: {
+    minimize: true,
+    // splitChunks: {},
+    concatenateModules: true,
+  },
+ 
+}

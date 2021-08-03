@@ -1,17 +1,41 @@
-# react-for-heroku
-A simple deployment ready webpack-react application for heroku
 
-## Instructions
+# Better Market - DAPP
+To use ReactJS, Es6, & Webpack:
 
-1.  Clone this repo
-2.  Run `yarn install`
-3.  Run `yarn run dev`, **localhost:8080** will open up in your default browser
-
-## Verify production code
-1. Run `webpack -p`
-2. Run `node server.js`, and visit **localhost:8080**, voila your code is ready for heroku now.
+# MVC Code
+https://github.com/march-dave/dApp-react-BetterMarket
 
 
-## Ref: 
-Debug, Production mode will be choose based on requirement.
-https://github.com/march-dave/webpack-4-test
+## Getting Started
+```
+$ npm install
+$ npm install -g webpack webpack-cli
+$ npm run start
+```
+
+## Deploy to Ropsten Network to use truffle
+truffle migrate --compile-all --reset --network ropsten
+
+#"start": "webpack-dev-server --open"
+
+## url: https://dapp-react-bettermarket.herokuapp.com/
+
+
+## logo deployed into IPFS
+1) ttc 
+https://ipfs.io/ipfs/QmaA49MkdTD5wQmYQz3jABUmjaS7nHJXt7Hdh6Tkw1912u
+
+1-1) ttc sold
+https://ipfs.io/ipfs/QmY1oBSi5EttJQVnwkBNTZ233ZKVzPLWsWtBWxPEojVWcD
+
+2) bluemix
+https://ipfs.io/ipfs/QmZ799f5fXymwKRyXZHHGW52S512Mr3BwmunUAoMkeBLn4
+
+2-1) bluemix-sold
+https://ipfs.io/ipfs/QmRzWoDoReXp4iSDRZ8QCwf5NW6eVxiwHnuLp4Ux3yPF4u
+
+3) town
+https://ipfs.io/ipfs/Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA
+
+3-1) town-sold
+https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
