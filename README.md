@@ -39,3 +39,10 @@ https://ipfs.io/ipfs/Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA
 
 3-1) town-sold
 https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
+
+
+
+npm cache clean -f
+rm -rf node_modules
+rm package-lock.json
+npm i
