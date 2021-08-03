@@ -41,9 +41,12 @@ https://ipfs.io/ipfs/Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA
 https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
 
 
-
 4) fresh npm
 npm cache clean -f
 rm -rf node_modules
 rm package-lock.json
 npm i
+
+5) setup the 
+process.env.mnemonic='sdfjlsdjflds'
+process.env.ropsten='https://ropsten.infura.io/v3/1111111111'
