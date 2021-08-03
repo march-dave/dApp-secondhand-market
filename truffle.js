@@ -15,7 +15,7 @@ module.exports = {
       // provider: function() {
       //     return new HDWalletProvider(mnemonic, process.env.ropsten)
       // },
-      provider: HDWalletProvider(mnemonic, process.env.ropsten),
+      provider: new HDWalletProvider(mnemonic, process.env.ropsten),
       network_id: '3',  // 'ropsten'
       gas: 4500000,
       gasPrice: 10000000000,

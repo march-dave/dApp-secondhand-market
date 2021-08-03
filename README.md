@@ -3,7 +3,7 @@
 To use ReactJS, Es6, & Webpack:
 
 # MVC Code
-https://github.com/march-dave/dApp-react-BetterMarket
+https://github.com/march-dave/dApp-secondhand-market
 
 
 ## Getting Started
@@ -18,7 +18,7 @@ truffle migrate --compile-all --reset --network ropsten
 
 #"start": "webpack-dev-server --open"
 
-## url: https://dapp-react-bettermarket.herokuapp.com/
+## url: https://dapp-secondhand-market.herokuapp.com/
 
 
 ## logo deployed into IPFS
@@ -42,6 +42,7 @@ https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
 
 
 
+4) fresh npm
 npm cache clean -f
 rm -rf node_modules
 rm package-lock.json
