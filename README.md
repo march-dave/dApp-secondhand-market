@@ -12,9 +12,8 @@ $ npm install
 $ npm install -g webpack webpack-cli
 $ npm run start
 ```
-
-## Deploy to Ropsten Network to use truffle
-truffle migrate --compile-all --reset --network ropsten
+## Deploy to Ploygon matic Network to use matic
+truffle migrate --compile-all --reset --network matic
 
 #"start": "webpack-dev-server --open"
 
@@ -45,7 +44,7 @@ https://ipfs.io/ipfs/Qmdq7wms3rCaNagp9iN1naUK3PcipsFhx2iRCuoqCAUfP1
 npm cache clean -f
 rm -rf node_modules
 rm package-lock.json
-npm i
+npm iropsten
 
 5) setup the 
 process.env.mnemonic='sdfjlsdjflds'
