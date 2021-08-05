@@ -1,5 +1,6 @@
 require("dotenv").load();
-var HDWalletProvider = require("truffle-hdwallet-provider");
+// var HDWalletProvider = require("truffle-hdwallet-provider");
+var HDWalletProvider = require("@truffle/hdwallet-provider");
 var mnemonic = process.env.mnemonic;
 
 module.exports = {
@@ -19,6 +20,14 @@ module.exports = {
       network_id: '3',  // 'ropsten'
       gas: 4500000,
       gasPrice: 10000000000,
-    }
+    },
+
+    matic: {
+      provider: () => new HDWalletProvider(mnemonic, process.env.matic),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 2000,
+      skipDryRun: true
+    },
   }
 };
