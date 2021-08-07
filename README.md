@@ -48,4 +48,4 @@ npm iropsten
 
 5) setup the 
 process.env.mnemonic='sdfjlsdjflds'
-process.env.ropsten='https://ropsten.infura.io/v3/1111111111'
+process.env.matic='https://matic-mumbai.chainstacklabs.com'
