@@ -47,5 +47,5 @@ rm package-lock.json
 npm iropsten
 
 5) setup the 
-process.env.mnemonic='sdfjlsdjflds'
+process.env.mnemonic='<your mnemonic>'
 process.env.matic='https://matic-mumbai.chainstacklabs.com'
