@@ -1,7 +1,7 @@
 [{
         "id": 0,
-        "type": "TTC Picture",
-        "note": "The Toronto Transit Commission is a public transport agency that operates bus, subway, streetcar, and paratransit services in Toronto, Ontario, Canada....",
+        "type": "City Picture",
+        "note": "Pictue taken by renowned Photographer Vitalik Jameson on 1892 AD. Artificial Intelligence CNN used on reconstructing the image. On scene: The Toronto Transit Commission is a public transport agency that operates bus, subway, streetcar, and paratransit services in Toronto, Ontario, Canada.",
         "picture": "https://ipfs.io/ipfs/QmaA49MkdTD5wQmYQz3jABUmjaS7nHJXt7Hdh6Tkw1912u",
         "area": "Toronto",
         "price": 1.23
@@ -9,18 +9,18 @@
     {
         "id": 1,
         "type": "Blue Mix",
-        "note": "Painting of young boy in an art gallery, viewing art",
+        "note": "Picture of a boy in an Zurich, Switzerland Art Gallery signed by Bentolli Arsocot - Zurich Mayor. One Day Zurich City Tour Ticket is also included.",
         "picture": "https://ipfs.io/ipfs/QmZ799f5fXymwKRyXZHHGW52S512Mr3BwmunUAoMkeBLn4",
-        "area": "Toronto",
-        "price": 1.56
+        "area": "Zurich",
+        "price": 1.21
     },
     {
         "id": 2,
         "type": "Town Picture",
-        "note": "Wall Art City Canvas Prints Decor City Decorations Modern Artwork for Beautiful City Pictures",
+        "note": "Valencizo Town Center, Italy painting hand brushed coloring by Artist- Caprio Sulopalad. Wall Art City Canvas Prints Decor City Decorations Modern Artwork for Beautiful City Pictures. 1932 AD.",
         "picture": "https://ipfs.io/ipfs/Qmd7gbpwWiMw5WJ3MiwLnfaoyVpcy5PMWBY9QdeUgwo5SA",
-        "area": "Montreal",
-        "price": 1.56
+        "area": "Italy",
+        "price": 1.37
     }
 
 ]

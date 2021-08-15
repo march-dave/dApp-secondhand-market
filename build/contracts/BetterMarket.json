@@ -3426,14 +3426,34 @@
       "transactionHash": "0x5d23cb4c7080e16824e18bbdaa3efcdc529eb28b44b38886ed859cd2e244aa0b"
     },
     "80001": {
-      "events": {},
+      "events": {
+        "0x0ad42c25d318a9c97dcaa5384bf588c1712e1c0e24fea88f97cb25dbf237a7cd": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_buyer",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_id",
+              "type": "uint256"
+            }
+          ],
+          "name": "LogBuyBetterMarket",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xCF892247E2FdE1A7D9D1D2F46Fe27ada8b9562DB",
-      "transactionHash": "0xbfd93cdb8dd1c9276911d52f996f7f04c38b4ad2fc369f3e8c63756351747a49"
+      "address": "0x7bC7Bf5d9b8Ce2cE069017bA089A0d72adeA7460",
+      "transactionHash": "0xe8f0d03ef8aafc6ed4a04cfb5441116b469fd416739cc770b2771d2df0f1eb74"
     }
   },
   "schemaVersion": "3.4.2",
-  "updatedAt": "2021-08-05T23:21:24.659Z",
+  "updatedAt": "2021-08-15T18:34:35.335Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

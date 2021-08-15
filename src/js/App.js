@@ -198,7 +198,6 @@ class App extends React.Component {
         })
         .then(() => {
           $("#name").val("");
-          // $('#age').val('');
           $("#buyModal").modal("hide");
         })
         .catch(err => {
@@ -210,6 +209,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
+    
+        <div style={{marginLeft: "35vw", marginTop: "20px"}}>
+          <h1>Namdaemun Marketplace</h1>
+        </div>
+
         <div
           className="row"
           // style={{ background: "#64b5f6", height: "50px", color: "#FFF" }}
@@ -364,8 +368,10 @@ class App extends React.Component {
                 <h4 className="modal-title">Buyer Info</h4>
               </div>
               <div className="modal-body">
-                <strong>Account Info</strong>: {this.state.buyerAddress} <br />
-                <strong>Name</strong>: {this.state.buyerName} <br />
+                {/* <strong>Account Info</strong>: {this.state.buyerAddress} <br />
+                <strong>Name</strong>: {this.state.buyerName} <br /> */}
+                 <strong>Account Info</strong>: Power Seller<br />
+                <strong>Name</strong>: Achyut Sun <br />
               </div>
               <div className="modal-footer">
                 <button
